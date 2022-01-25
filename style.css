@@ -119,7 +119,7 @@ input {
     text-align: center
 }
 
-button {
+.buttons button {
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -140,12 +140,10 @@ button {
 }
 
 select {
-    /* Reset Select */
     appearance: none;
     outline: 0;
     border: 0;
     box-shadow: none;
-    /* Personalize */
     flex: 1;
     padding: 0 1em;
     color: #000;
@@ -164,9 +162,6 @@ select {
     overflow: hidden;
 }
 
-
-/* Arrow */
-
 .select::after {
     content: '\25BC';
     position: absolute;
@@ -178,9 +173,107 @@ select {
     pointer-events: none;
 }
 
-
-/* Transition */
-
 .select:hover::after {
     color: #f39c12;
+}
+
+.introduction {
+    width: 60%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile {
+    width: 400px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 2em;
+    border-radius: 12px;
+}
+
+.head img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.head button {
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #8e2de2, #5e21da);
+    color: white;
+    border-radius: 50px;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+}
+
+.job {
+    letter-spacing: 3px;
+}
+
+.about {
+    font-size: 14px;
+}
+
+.foot {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.foot .social {
+    /* width: 100%; */
+    text-align: center;
+    padding: 1em;
+    border-radius: 50%;
+}
+
+.social i {
+    font-size: 2rem;
+    color: white;
+}
+
+.social:nth-of-type(1) {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.social:nth-of-type(2) {
+    background: linear-gradient(120deg, #dd4b39, #FFFFFF);
+}
+
+.social:nth-of-type(3) {
+    background: linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa, #ffffff);
+}
+
+.social:nth-of-type(4) {
+    background: linear-gradient(120deg, #3b5998, #FFFFFF);
+}
+
+.iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    width: 100%;
+}
+
+.grid {
+    margin: 2rem;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.grid p {
+    margin-top: 20px;
+}
+
+.grid img {
+    width: 200px;
 }
